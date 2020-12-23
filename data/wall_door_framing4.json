@@ -1,34 +1,45 @@
 {
-    "@context": {
-      "@vocab": "http://bsi.org/ifc/4x3/",
-      "@base": "http://myfile.org/ids/",
-      "ref": "@id",
-      "data": "@graph",
-      "type": "@type",
-      "globalId": "@id"
-    },
-    "@type": "IfcProject",
+  "@context": {
+    "@vocab": "http://bsi.org/ifc/4x3/",
+    "@base": "http://myfile.org/ids/",
+    "ref": "@id",
+    "data": "@graph",
+    "type": "@type",
+    "globalId": "@id"
+  },
+  "@type": "IfcProject",
+  "@explicit": true,
+  "isDecomposedBy": {  
     "@explicit": true,
-    "isDecomposedBy": { // IfcRelAggregates
-      "@explicit": true,
-      "relatedObjects": {
-        "@explicit": true, // ---> ifcsite
-        "isDecomposedBy": {
-          "@explicit": true, // IfcRelAggregates
-          "relatedObjects": {
-            "@explicit": true, // ---> IfcBuilding
-            "isDecomposedBy": {
-              "@explicit": true, // IfcRelAggregates
-              "relatedObjects": {
-                "@explicit": true, // ---> IfcBuildingStorey
-                "containsElements": {
-                  "@explicit": true, // ---> IfcRelContainedInSpatialStructure
-                  "relatedElements": {
-                    "@explicit": true, // ---> [IfcWallStandardCase, IfcDoor]
-                    "isDefinedBy":{
-                      "@explicit":true, // ---> [IfcRelDefinesByProperties]
-                      "relatedObjects":{
+    "relatedObjects": {
+      "@explicit": true,  
+      "isDecomposedBy": {
+        "@explicit": true, 
+        "relatedObjects": {
+          "@explicit": true, 
+          "isDecomposedBy": {
+            "@explicit": true, 
+            "relatedObjects": {
+              "@explicit": true, 
+              "containsElements": {
+                "@explicit": true, 
+                "relatedElements": {
+                  "@explicit": true, 
+                  "isDefinedBy":{
+                    "@explicit":true,
+                    "relatingPropertyDefinition":{
+                      "@explicit":true,
+                      "hasProperties":{
                         "@explicit":true,
+                        "name":{
+                          "@explicit":true
+                        },
+                        "nominalValue":{
+                          "@explicit":true,
+                          "value":{
+                            "@explicit":true
+                          }
+                        }
                       }
                     }
                   }
@@ -40,3 +51,5 @@
       }
     }
   }
+}
+
