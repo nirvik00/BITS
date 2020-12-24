@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "@vocab": "http://bsi.org/ifc/4x3/",
+    "@base": "http://myfile.org/ids/",
+    "ref": "@id",
+    "data": "@graph",
+    "type": "@type",
+    "globalId": "@id"
+  }
+}
