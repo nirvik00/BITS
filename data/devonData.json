@@ -10,7 +10,7 @@
     "fileSchema": "IFC.JSON-4",
     "originatingSystem": "IFC2JSON_python",
     "timeStamp": "2020-10-14T23:19:24",
-    "graph": [
+    "data": [
       {
         "type": "IfcProject",
         "globalId": "2fb45857-e9ac-4660-8943-604b07b54025",
